@@ -11,6 +11,35 @@
 	<header class="main-header">
 		<h1>Welcome to Log4j2 Tutorials</h1>
 	</header>
+	<main class="body-section">
+		<div class="sub-section">
+			<h3>Log Levels</h3>
+			<ul>
+				<li><h4>All:</h4>To log all events</li>
+				<li><h4>Trace:</h4> A fine-grained debug message, typically capturing the flow through the application</li>
+				<li><h4>Debug:</h4> A general debugging event</li>
+				<li><h4>Info:</h4> An event for informational purposes</li>
+				<li><h4>Warn:</h4> An event that might possibly lead to an error</li>
+				<li><h4>Error:</h4> An error in the application, possibly recoverable</li>
+				<li><h4>Fatal:</h4> A severe error that will prevent the application from continuing</li>
+			</ul>
+		</div>
+		<section class="sub-section__appender">
+			<h3 >Appenders</h3>
+			<div >
+				We can specify destinations to keep event logs. We may want to print those logs in the console or any external file. Appenders usually are only responsible for writing the event data to the target destination. We may use multiple appenders.
+			</div>
+		</section>
+		<section class="sub-section__pattern">
+			<h3>Understanding Pattern Layout</h3>
+			<div class="break"></div>
+			<div class="pattern">
+				<div >
+					%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} – %msg%n
+				</div>
+			</div>
+		</section>
+	</main>
 	<footer>
 		<h5>&copy; copyright</h5>
 	</footer>
